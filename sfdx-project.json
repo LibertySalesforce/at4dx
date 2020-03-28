@@ -1,11 +1,38 @@
 {
-  "packageDirectories": [
-    {
-      "path": "sfdx-source/core",
-      "default": true
+    "packageDirectories": [
+        {
+            "path": "sfdx-source/core",
+            "default": true,
+            "package": "at4dx_lits",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "dependencies": [
+                {
+                    "package": "fflib_mocks_lits",
+                    "versionNumber": "0.1.0.1"
+                },
+                {
+                    "package": "fflib_commons_lits",
+                    "versionNumber": "0.1.0.1"
+                },
+                {
+                    "package": "force_di_lits",
+                    "versionNumber": "0.1.0.1"
+                },
+                {
+                    "package": "at4dx_lits",
+                    "versionNumber": "0.1.0.1"
+                }
+            ]
+        }
+    ],
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "46.0",
+    "packageAliases": {
+        "at4dx_lits": "0Ho2E000000GmncSAC",
+        "fflib_commons_lits": "0Ho2E000000GmnSSAS",
+        "fflib_mocks_lits": "0Ho2E000000GmnNSAS",
+        "force_di_lits": "0Ho2E000000GmnXSAS"
     }
-  ],
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "46.0"
 }

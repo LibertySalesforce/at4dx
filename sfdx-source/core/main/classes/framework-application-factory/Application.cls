@@ -224,6 +224,9 @@ public class Application
         @TestVisible
         private void setMock(IApplicationSObjectDomain mockDomain)
         {
+            // if (!(mockDomain instanceOf fflib_SObjectDomain.IConstructable) || !(mockDomain instanceOf fflib_SObjectDomain.IConstructable2))
+            //     throw new DeveloperException('Domain mock must implement either fflib_SObjectDomain IConstructable or IConstructable2');
+
             di_Injector.Org.Bindings.byName( IApplicationSObjectDomain.class.getName() )
                                     .bySObject( mockDomain.sObjectType() )
                                     .replaceBindingWith( mockDomain );
